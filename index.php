@@ -29,7 +29,7 @@
 
 	</header>
 	<div class="contenedor">
-		<video width="800" height="400" autoplay controls loop muted>
+		<video width="800" height="400" autoplay loop muted>
 			<source src="video/daitocar.mp4" type="video/mp4">
 		</video>
 		<div class="cajas"></div>
