@@ -8,11 +8,26 @@ html
 	background-size cover
 	body
 		.delimitador
-			width 1000px
+			width 85%
 			margin 0 auto 0 auto
 			.contenedor			
 				/*video
 					display none*/
+				.area_noticias
+					width 900px
+					//background-color orange
+					.noticia
+						width 40%
+						background-color rgba(230, 230, 230, .75)
+						padding 2em
+						margin 0 .5em 1em .5em
+						.titular
+							border-bottom solid 1px grey
+							font-size 18px
+							color grey
+							a
+								text-decoration none
+							
 		footer
 			padding 2em
 			background-color grey
@@ -26,24 +41,28 @@ html
 						a
 							text-decoration none
 		header
+			z-index 0
+			position relative
 			img
 				width 100%
 			.titulo_header				
 				padding 1em
-				background-color #000
-				color white
-				opacity .9
+				background-color #fff
+				color #000
+				opacity .7
 				position absolute
-				bottom 40%
-				left 15%
+				width 70%
+				bottom 5%
+				left 0%
 		nav
 			background-color black
 			height 61px
 			.menu
+				z-index 1
 				margin 0
 				width 100%
-				background-color rgb(0,0,0)
-				opacity 0.9
+				background-color rgba(0,0,0, 0.6)
+				//opacity 0.5
 				h1
 					margin 10px 0 0 5px
 					padding 0
@@ -62,7 +81,8 @@ html
 					.item
 						display inline-block
 						padding .3em
-						border-right solid 1px white				
+						border-right solid 2px white
+						border-radius 10px				
 						margin 0 .1em
 						a
 							color white

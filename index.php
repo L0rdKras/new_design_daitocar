@@ -37,7 +37,27 @@
 			<!--<video width="800" height="400" autoplay controls loop muted>
 				<source src="video/daitocar.mp4" type="video/mp4">
 			</video>-->
-			
+			<div class="area_noticias">
+				<div class="noticia">
+					<div class="imagen_noticia">
+						<!--poner siempre una imagen-->
+					</div>
+					<div class="titular">
+						<a>TITULAR DE LA NOTICIA</a>
+					</div>
+				</div>
+				<div class="noticia">
+					<div class="imagen_noticia">
+						<!--poner siempre una imagen-->
+					</div>
+					<div class="titular">
+						<a>TITULAR DE OTRA NOTICIA</a>
+					</div>
+				</div>
+			</div>
+			<div class="costado">
+				
+			</div>
 		</div>
 	</div>
 	<footer>
@@ -67,12 +87,12 @@ $(document).ready(function(){
              
             if($(window).scrollTop() >= altura){
                          
-                  $(".menu").css("margin-top","0");
+                  //$(".menu").css("margin-top","0");
                   $(".menu").css("position","fixed");
                                
             }else{
                                      
-                  $(".menu").css("margin-top","100px");
+                  //$(".menu").css("margin-top","100px");
                   $(".menu").css("position","static");
                                
             }
