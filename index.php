@@ -24,20 +24,39 @@
 				<li class="item"><a href="">Contacto</a></li>
 			</ul>
 		</div>
-	</nav>		
-	<header>
-
-	</header>
-	<div class="contenedor">
-		<video width="800" height="400" autoplay loop muted>
-			<source src="video/daitocar.mp4" type="video/mp4">
-		</video>
-		<div class="cajas"></div>
-		<div class="cajas"></div>
-		<div class="cajas"></div>
+	</nav>
+	<div class="delimitador">
+		<header>
+			<img src="imagenes/repuesto.jpg" alt="Fondo header">
+			<div class="titulo_header">
+				<h1>DAITOCAR REPUESTOS</h1>
+				<h3>Todo lo que su vehiculo necesita</h3>
+			</div>
+		</header>
+		<div class="contenedor">
+			<!--<video width="800" height="400" autoplay controls loop muted>
+				<source src="video/daitocar.mp4" type="video/mp4">
+			</video>-->
+			
+		</div>
 	</div>
 	<footer>
-		
+		<div class="datos_contacto">
+			<ul>
+				<li class="info">Casa Matriz La Serena</li>
+				<li class="info">Pampa Baja n° 3038</li>
+				<li class="info">512298150</li>
+				<li class="info"><a href="mailto:ventaspampa@daitocar.cl">ventaspampa@daitocar.cl</a></li>
+			</ul>
+		</div>
+		<div class="datos_contacto">
+			<ul>
+				<li class="info">Sucursal Centro La Serena</li>
+				<li class="info">Juan de Dios Peni n°870</li>
+				<li class="info">512219575</li>
+				<li class="info"><a href="mailto:ventaspeni@daitocar.cl">ventaspeni@daitocar.cl</a></li>
+			</ul>
+		</div>
 	</footer>
 	<script>
 $(document).ready(function(){
