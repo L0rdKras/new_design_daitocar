@@ -2,9 +2,22 @@
 
 @import 'nib/gradients'
 
+@font-face {
+	font-family: 'Concielian'
+	src:url('fuentes/ConcielianAlpha.TTF') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'goodtime'
+	src:url('fuentes/GOODTIME.TTF') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
 
 html
-	background url(imagenes_css/fondo.png) no-repeat fixed center
+	background url(imagenes_css/fondo-motor.jpg) no-repeat fixed center
 	background-size cover
 	body
 		.delimitador
@@ -17,14 +30,17 @@ html
 					.noticia
 						display inline-block
 						width 40%
-						background-color rgba(230, 230, 230, .75)
+						background-color rgba(230, 230, 230, .8)
 						padding 2em
 						margin 0 .5em 1em .5em
+						.imagen_noticia
+							img
+								width 100%
 						.titular
 							border-bottom solid 1px grey
 							font-size 18px
 							font-weight bold
-							color grey
+							color rgb(100, 100, 100)
 							a
 								text-decoration none
 				.contenedor_video
@@ -44,34 +60,40 @@ html
 						.titulo_video
 							border-bottom solid 1.5px white
 							margin-bottom 10px
-							font-size 25px							
+							
 							h4
 								display inline-block
 								vertical-align top								
 								//font-size 16px								
-								margin-top 10px
+								margin-top 15px
+								margin-bottom 0
+								font-family 'goodtime'
+								font-size 19px
 							img
 								display inline-block
 								width 50px
 								height 50px
 		footer
 			padding 2em
-			background-color grey
+			background-color rgb(90, 90, 90)
+			color rgb(50, 50, 50)
 			.datos_contacto
 				display inline-block
 				ul
 					list-style none	
 					.info
 						font-size 14px
-						border-bottom solid 1px black
+						border-bottom solid 1px rgb(50, 50, 50)
 						a
 							text-decoration none
+							color rgb(50, 50, 50)
 		header
 			z-index 0
 			position relative
 			img
 				width 100%
-			.titulo_header				
+			.titulo_header
+				font-family 'goodtime'
 				padding 1em
 				background-color #fff
 				color #000
@@ -94,7 +116,8 @@ html
 					padding 0
 					color white
 					display inline-block
-					vertical-align top					
+					vertical-align top	
+					font-family 'goodtime'				
 				img
 					margin-top .3em
 					display inline-block
@@ -107,8 +130,8 @@ html
 					.item
 						display inline-block
 						padding .3em
-						border-right solid 2px white
-						border-radius 10px				
+						border-right solid 2px white						
+						border-radius 20px				
 						margin 0 .1em
 						a
 							color white

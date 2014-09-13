@@ -13,7 +13,7 @@
 <body>
 	<nav>
 		<div class="menu">
-			<img src="imagenes/logo2.png" alt="Logo">
+			<img src="imagenes/logo50.png" alt="Logo">
 			<h1>DAITOCAR</h1>
 			<ul>
 				<li class="item"><a href="">Inicio</a></li>
@@ -42,7 +42,7 @@
 				</div>
 				<div class="texto_video">
 					<div class="titulo_video">
-						<img src="imagenes/logo2.png" alt="Logo">
+						<img src="imagenes/logo50.png" alt="Logo">
 						<h4>Daitocar Repuestos</h4>
 					</div>
 					Por más de 15 años junto a usted...bla bla bla
@@ -52,6 +52,7 @@
 				<div class="noticia">
 					<div class="imagen_noticia">
 						<!--poner siempre una imagen-->
+						<img src="imagenes/repuestos_news.jpg" alt="imagen para noticia">
 					</div>
 					<div class="titular">
 						<a>TITULAR DE LA NOTICIA</a>
@@ -60,9 +61,19 @@
 				<div class="noticia">
 					<div class="imagen_noticia">
 						<!--poner siempre una imagen-->
+						<img src="imagenes/repuestos_news.jpg" alt="imagen para noticia">
 					</div>
 					<div class="titular">
 						<a>TITULAR DE OTRA NOTICIA</a>
+					</div>
+				</div>
+				<div class="noticia">
+					<div class="imagen_noticia">
+						<!--poner siempre una imagen-->
+						<img src="imagenes/repuestos_news.jpg" alt="imagen para noticia">
+					</div>
+					<div class="titular">
+						<a>Tambien puede ir la publicación de una Oferta</a>
 					</div>
 				</div>
 			</div>
