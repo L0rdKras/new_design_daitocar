@@ -11,12 +11,11 @@ html
 			width 85%
 			margin 0 auto 0 auto
 			.contenedor			
-				/*video
-					display none*/
 				.area_noticias
 					width 900px
 					//background-color orange
 					.noticia
+						display inline-block
 						width 40%
 						background-color rgba(230, 230, 230, .75)
 						padding 2em
@@ -24,10 +23,37 @@ html
 						.titular
 							border-bottom solid 1px grey
 							font-size 18px
+							font-weight bold
 							color grey
 							a
 								text-decoration none
-							
+				.contenedor_video
+					background-color rgba(0, 0, 0, .75)
+					margin-bottom 10px
+					.muestra_video
+						display inline-block
+						padding 1em						
+					.texto_video
+						width 30%
+						margin-top 1em
+						padding 1em
+						display inline-block
+						background-color rgba(92, 92, 92, .8)
+						color white
+						vertical-align top
+						.titulo_video
+							border-bottom solid 1.5px white
+							margin-bottom 10px
+							font-size 25px							
+							h4
+								display inline-block
+								vertical-align top								
+								//font-size 16px								
+								margin-top 10px
+							img
+								display inline-block
+								width 50px
+								height 50px
 		footer
 			padding 2em
 			background-color grey

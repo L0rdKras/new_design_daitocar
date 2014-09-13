@@ -34,9 +34,20 @@
 			</div>
 		</header>
 		<div class="contenedor">
-			<!--<video width="800" height="400" autoplay controls loop muted>
-				<source src="video/daitocar.mp4" type="video/mp4">
-			</video>-->
+			<div class="contenedor_video">
+				<div class="muestra_video">
+					<video width="700" height="400" autoplay controls loop muted>
+						<source src="video/daitocar.mp4" type="video/mp4">
+					</video>
+				</div>
+				<div class="texto_video">
+					<div class="titulo_video">
+						<img src="imagenes/logo2.png" alt="Logo">
+						<h4>Daitocar Repuestos</h4>
+					</div>
+					Por más de 15 años junto a usted...bla bla bla
+				</div>
+			</div>
 			<div class="area_noticias">
 				<div class="noticia">
 					<div class="imagen_noticia">
