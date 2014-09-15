@@ -102,6 +102,13 @@
 				<li class="info">512219575</li>
 				<li class="info"><a href="mailto:ventaspeni@daitocar.cl">ventaspeni@daitocar.cl</a></li>
 			</ul>
+		</div>	
+		<div id="redes_sociales">
+			<ul>
+				<li><a href="" class="icon-facebook"></a></li>
+				<li><a href="" class="icon-twitter"></a></li>
+				<li><a href="" class="icon-googleplus"></a></li>
+			</ul>
 		</div>
 	</footer>
 	<script>
