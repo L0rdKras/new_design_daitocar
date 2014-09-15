@@ -11,11 +11,11 @@
 	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 </head>
 <body>
-	<nav>
-		<div class="menu">
+	<div class="contenedor_nav">
+		<nav class="menu">
 			<img src="imagenes/logo50.png" alt="Logo">
 			<h1>DAITOCAR</h1>
-			<ul>
+			<ul class="lista_menu">
 				<li class="item"><a href="">Inicio</a></li>
 				<li class="item"><a href="">Empresa</a></li>
 				<li class="item"><a href="">Noticias</a></li>
@@ -23,8 +23,12 @@
 				<li class="item"><a href="">Ubicación</a></li>
 				<li class="item"><a href="">Contacto</a></li>
 			</ul>
-		</div>
-	</nav>
+			<div class="menu_movil">
+				<a href="" class="icon-menu"></a>
+			</div>
+		</nav>
+
+	</div>
 	<div class="delimitador">
 		<header>
 			<img src="imagenes/repuesto.jpg" alt="Fondo header">
@@ -73,7 +77,7 @@
 						<img src="imagenes/repuestos_news.jpg" alt="imagen para noticia">
 					</div>
 					<div class="titular">
-						<a>Tambien puede ir la publicación de una Oferta</a>
+						<a>También puede ir la publicación de una Oferta</a>
 					</div>
 				</div>
 			</div>
