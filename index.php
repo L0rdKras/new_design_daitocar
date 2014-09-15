@@ -33,7 +33,7 @@
 		<header>
 			<img src="imagenes/repuesto.jpg" alt="Fondo header">
 			<div class="titulo_header">
-				<h1>DAITOCAR REPUESTOS</h1>
+				<div id="marca"><h1>DAITOCAR REPUESTOS</h1></div>
 				<h3>Todo lo que su vehiculo necesita</h3>
 			</div>
 		</header>
