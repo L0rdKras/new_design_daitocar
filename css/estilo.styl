@@ -4,6 +4,12 @@
 
 @import 'nib/gradients'
 
+cayene= #e46764
+rojo= #d81e05
+paloma= #aab1b0
+dazzling_blue= #006bb6
+azul= #004459
+
 @font-face {
 	font-family: 'Concielian'
 	src:url('fuentes/ConcielianAlpha.TTF') format('truetype');
@@ -19,22 +25,16 @@
 
 
 html
-	/*background url(imagenes_css/fondo-motor.jpg) no-repeat fixed center
-	background-size cover*/
-	background linear-gradient(135deg, #3f4c6b 0%,#fff 100%);
+	background linear-gradient(135deg, dazzling_blue 0%,azul 100%);
 	body
 		.delimitador
-			//width 85%
-			//margin 0 auto 0 auto
 			.contenedor			
-				.area_noticias
-					//width 100%
+				.area_noticias					
 					background-color rgba(240, 240, 240, .7)
-					.noticia
-						display inline-block
-						//width 40%
+					.noticia						
+						width 80%
 						background-color rgba(230, 230, 230, .8)
-						padding 2em
+						padding 1em
 						margin 0 auto 1em auto
 						.imagen_noticia
 							img
@@ -46,9 +46,13 @@ html
 							color rgb(100, 100, 100)
 							a
 								text-decoration none
+								color rgb(100, 100, 100)
+						.fecha
+							color rgb(100, 100, 100)
+							font-size 12px
 				.contenedor_video
 					display none
-					background-color rgba(0, 0, 0, .75)
+					background-color rgba(0, 68, 89, .75)
 					margin-bottom 10px
 					.muestra_video
 						display inline-block
@@ -67,8 +71,7 @@ html
 							
 							h4
 								display inline-block
-								vertical-align top								
-								//font-size 16px								
+								vertical-align top
 								margin-top 15px
 								margin-bottom 0
 								font-family 'goodtime'
@@ -80,11 +83,12 @@ html
 			header
 				z-index 0
 				position relative
+				border-bottom 30px solid paloma
 				img
 					width 100%
 				.titulo_header
 					font-family 'goodtime'
-					padding 0
+					padding 0 0 0 1em
 					background-color #fff
 					color #000
 					opacity .7
@@ -95,9 +99,11 @@ html
 					#marca
 						display none
 		footer
+			position relative
 			padding 2em
-			background-color rgb(90, 90, 90)
+			background-color paloma//rgb(90, 90, 90)
 			color rgb(50, 50, 50)
+			border-top 30px solid rojo
 			.datos_contacto
 				display inline-block
 				ul
@@ -108,9 +114,30 @@ html
 						a
 							text-decoration none
 							color rgb(50, 50, 50)
+			#logo_pie
+				padding 1em 0
+				position absolute
+				top -20%
+				left 47%
+				img
+					width 60px
+					height 60px
+			#redes_sociales
+				display inline-block
+				vertical-align top
+				text-align center
+				#lista_redes
+					vertical-align top
+					list-style none	
+					display inline-block		
+					a
+						text-decoration none
+						font-size 25px
+						color rgb(50, 50, 50)
 		.contenedor_nav
-			background-color black
-			height 61px			
+			background-color dazzling_blue
+			height 61px	
+			border-bottom 30px solid rojo		
 			.menu
 				z-index 100
 				margin 0
@@ -152,17 +179,13 @@ html
 						color white
 						text-decoration none
 
-@media screen and (min-width: 480px)
+@media screen and (min-width: 619px)
 	html
 		body
-			.delimitador
-				.contenedor			
-					.area_noticias						
-						//background-color orange
-						width 90%
-						margin 0 auto 0 auto
-						/*.noticia
-							width 40%*/
+			footer
+				#redes_sociales
+					float right
+
 
 @media screen and (min-width: 825px)
 	html
@@ -170,7 +193,9 @@ html
 			.delimitador
 				.contenedor			
 					.area_noticias
+						padding-left 10%
 						.noticia
+							display inline-block
 							width 40%
 				header
 					.titulo_header
@@ -191,7 +216,7 @@ html
 		background-size cover
 		body
 			.delimitador
-				width 85%
+				width 90%
 				margin 0 auto 0 auto
 
 @media screen and (min-width: 1280px)
@@ -200,7 +225,7 @@ html
 			.delimitador
 				.contenedor
 					.area_noticias
-						width 80%
+						width 75%
 						margin 0
 					.contenedor_video
 						display block						

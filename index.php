@@ -13,7 +13,7 @@
 <body>
 	<div class="contenedor_nav">
 		<nav class="menu">
-			<img src="imagenes/logo50.png" alt="Logo">
+			<a href="http://www.daitocar.cl"><img src="imagenes/logo50.png" alt="Logo"></a>
 			<h1>DAITOCAR</h1>
 			<ul class="lista_menu">
 				<li class="item"><a href="">Inicio</a></li>
@@ -59,7 +59,10 @@
 						<img src="imagenes/repuestos_news.jpg" alt="imagen para noticia">
 					</div>
 					<div class="titular">
-						<a>TITULAR DE LA NOTICIA</a>
+						<a href="">TITULAR DE LA NOTICIA</a>
+					</div>
+					<div class="fecha">
+						16 de Septiembre del 2014
 					</div>
 				</div>
 				<div class="noticia">
@@ -68,7 +71,10 @@
 						<img src="imagenes/repuestos_news.jpg" alt="imagen para noticia">
 					</div>
 					<div class="titular">
-						<a>TITULAR DE OTRA NOTICIA</a>
+						<a href="">TITULAR DE OTRA NOTICIA</a>
+					</div>
+					<div class="fecha">
+						16 de Septiembre del 2014
 					</div>
 				</div>
 				<div class="noticia">
@@ -77,7 +83,10 @@
 						<img src="imagenes/repuestos_news.jpg" alt="imagen para noticia">
 					</div>
 					<div class="titular">
-						<a>También puede ir la publicación de una Oferta</a>
+						<a href="">También puede ir la publicación de una Oferta</a>
+					</div>
+					<div class="fecha">
+						16 de Septiembre del 2014
 					</div>
 				</div>
 			</div>
@@ -103,11 +112,14 @@
 				<li class="info"><a href="mailto:ventaspeni@daitocar.cl">ventaspeni@daitocar.cl</a></li>
 			</ul>
 		</div>	
+		<div id="logo_pie">
+			<img src="imagenes/logo2.png" alt="">
+		</div>
 		<div id="redes_sociales">
-			<ul>
-				<li><a href="" class="icon-facebook"></a></li>
-				<li><a href="" class="icon-twitter"></a></li>
-				<li><a href="" class="icon-googleplus"></a></li>
+			<ul id="lista_redes">
+				<a href="http://www.facebook.com/daitocar" class="icon-facebook"></a>
+				<a href="" class="icon-twitter"></a>
+				<a href="" class="icon-googleplus"></a>
 			</ul>
 		</div>
 	</footer>
