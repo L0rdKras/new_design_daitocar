@@ -38,60 +38,10 @@
 			</div>
 		</header>
 		<div class="contenedor">
-			<div class="contenedor_video">
-				<div class="muestra_video">
-					<video width="700" height="400" autoplay controls loop muted>
-						<source src="video/daitocar.mp4" type="video/mp4">
-					</video>
-				</div>
-				<div class="texto_video">
-					<div class="titulo_video">
-						<img src="imagenes/logo50.png" alt="Logo">
-						<h4>Daitocar Repuestos</h4>
-					</div>
-					Por más de 15 años junto a usted...bla bla bla
-				</div>
-			</div>
-			<div class="area_noticias">
-				<div class="noticia">
-					<div class="imagen_noticia">
-						<!--poner siempre una imagen-->
-						<img src="imagenes/repuestos_news.jpg" alt="imagen para noticia">
-					</div>
-					<div class="titular">
-						<a href="">TITULAR DE LA NOTICIA</a>
-					</div>
-					<div class="fecha">
-						16 de Septiembre del 2014
-					</div>
-				</div>
-				<div class="noticia">
-					<div class="imagen_noticia">
-						<!--poner siempre una imagen-->
-						<img src="imagenes/repuestos_news.jpg" alt="imagen para noticia">
-					</div>
-					<div class="titular">
-						<a href="">TITULAR DE OTRA NOTICIA</a>
-					</div>
-					<div class="fecha">
-						16 de Septiembre del 2014
-					</div>
-				</div>
-				<div class="noticia">
-					<div class="imagen_noticia">
-						<!--poner siempre una imagen-->
-						<img src="imagenes/repuestos_news.jpg" alt="imagen para noticia">
-					</div>
-					<div class="titular">
-						<a href="">También puede ir la publicación de una Oferta</a>
-					</div>
-					<div class="fecha">
-						16 de Septiembre del 2014
-					</div>
-				</div>
-			</div>
-			<div class="costado">
-				
+			<div class="cuerpo_noticia">
+				<h2>Titulo</h2>
+				<h3>Subtitulo</h3>
+				<p>Se escribe el contenido de la noticia</p>
 			</div>
 		</div>
 	</div>
@@ -126,7 +76,7 @@
 	<script>
 $(document).ready(function(){
                    
-      /*var altura = $(".menu").offset().top;
+      var altura = $(".menu").offset().top;
                          
       $(window).scroll(function(){
              
@@ -142,20 +92,8 @@ $(document).ready(function(){
                                
             }
                          
-      });*/
-      /***importante media query con javascript
-      function revisa_resolucion_1024(mql){
-      	if(mql.matches){
-      		console.log("Resolucion 1024 o superior");
-      	}else{
-      		console.log("Resolucion inferior a 1024");
-      	}
-      }
-
-      var resolucion1024 = matchMedia("screen and (min-width: 1024px)");
-      revisa_resolucion_1024(resolucion1024);
-      resolucion1024.addListener(revisa_resolucion_1024);
-      */
+      });
+                   
 });
 	</script>
 </body>

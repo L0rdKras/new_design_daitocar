@@ -5,10 +5,11 @@
 @import 'nib/gradients'
 
 cayene= #e46764
-rojo= #d81e05
-paloma= #aab1b0
+rojo= #d81e05 //216,30,5
+paloma= #aab1b0 //70,177,176
 dazzling_blue= #006bb6
-azul= #004459
+azul= #003f87 //0, 63, 135
+celosia= #f47d44 //244,125,65
 
 @font-face {
 	font-family: 'Concielian'
@@ -25,7 +26,7 @@ azul= #004459
 
 
 html
-	background linear-gradient(135deg, dazzling_blue 0%,azul 100%);
+	//background linear-gradient(135deg, dazzling_blue 0%,azul 100%);
 	body
 		.delimitador
 			.contenedor			
@@ -33,7 +34,7 @@ html
 					padding-top 1em
 					.noticia						
 						width 80%
-						background-color rgba(230, 230, 230, .8)
+						background-color rgba(216,30,5, .8)
 						padding 1em
 						margin 0 auto 1em auto
 						.imagen_noticia
@@ -42,19 +43,19 @@ html
 							img
 								width 100%
 						.titular
-							border-bottom solid 1px grey
+							border-bottom solid 1px white
 							font-size 18px
 							font-weight bold
-							color rgb(100, 100, 100)
+							color white
 							a
 								text-decoration none
-								color rgb(100, 100, 100)
+								color white
 						.fecha
-							color rgb(100, 100, 100)
+							color white
 							font-size 12px
 				.contenedor_video
 					display none
-					background-color rgba(0, 68, 89, .75)
+					background-color rgba(0, 63, 135, .9)
 					margin-bottom 10px
 					.muestra_video
 						display inline-block
@@ -82,24 +83,35 @@ html
 								display inline-block
 								width 30px
 								height 30px
+				.cuerpo_noticia
+					padding 1em
+					background-color rgba(240,240,240, 0.6)
+					h2
+						border-bottom 1px solid black
+						font-size 28px
 			header
 				z-index 0
 				position relative
-				border-bottom 30px solid paloma
+				border-bottom 30px solid rojo
 				img
 					width 100%
+					margin 0
 				.titulo_header
 					font-family 'goodtime'
 					padding 0 0 0 1em
 					background-color #fff
 					color #000
 					opacity .7
-					position absolute
-					width 70%
+					//position absolute
+					//width 70%
 					bottom 5%
 					left 0%
 					#marca
-						display none
+						//display none
+						h1
+							margin 0
+					h3
+						margin 0
 		footer
 			position relative
 			padding 2em
@@ -137,33 +149,38 @@ html
 						font-size 25px
 						color rgb(50, 50, 50)
 		.contenedor_nav
-			background-color dazzling_blue
+			background-color rojo//cayene
 			height 61px	
-			border-bottom 30px solid rojo		
+			border-bottom 30px solid paloma		
 			.menu
 				z-index 100
+				position fixed
 				margin 0
 				width 100%
-				background-color rgba(0,0,0, 0.6)
+				background-color rgba(216,30,5, 0.6)
 				h1
+					display none
 					margin 15px 0 0 5px
 					padding 0
 					color white
-					display inline-block
+					//display inline-block
 					vertical-align top	
 					font-family 'goodtime'				
 				img
 					margin-top .3em
 					display inline-block
+					padding-left 1em
 					width 50px
 					height 50px
 				.lista_menu		
 					display none
 					vertical-align top
 					float right
+					margin 1em 0
 					.item
+						font-size 15px
 						display inline-block
-						padding .3em
+						padding .2em
 						border-right solid 2px white						
 						border-radius 20px				
 						margin 0 .1em
@@ -173,8 +190,8 @@ html
 							font-weight bold
 				.menu_movil
 					margin-top .3em
-					//display inline-block
-					display none
+					display inline-block
+					//display none
 					float right
 					font-size 40px			
 					vertical-align top
@@ -194,7 +211,7 @@ html
 
 @media screen and (min-width: 640px)
 	html
-		body
+		body			
 			footer
 				#redes_sociales
 					float right
@@ -203,6 +220,16 @@ html
 @media screen and (min-width: 768px)
 	html
 		body
+			.contenedor_nav
+				.menu
+					h1
+						display inline-block
+					img 
+						padding-left .5em
+					.lista_menu
+						display inline-block
+					.menu_movil
+						display none
 			.delimitador
 				.contenedor			
 					.area_noticias
@@ -212,15 +239,8 @@ html
 							//margin-right 1%
 				header
 					.titulo_header
-						#marca
-							display block						
-							width 100%
-			.contenedor_nav
-				.menu
-					/*.lista_menu
-						display inline-block*/
-					.menu_movil
-						display none
+						position absolute
+						padding 1.5em
 
 
 @media screen and (min-width: 1024px)
@@ -228,9 +248,16 @@ html
 		background url(imagenes_css/fondo-motor.jpg) no-repeat fixed center
 		background-size cover
 		body
+			.contenedor_nav
+				.menu
+					width 95%
+					padding 0 2.5%
+					.lista_menu
+						.item
+							font-size 16px
 			.delimitador
-				/*width 90%
-				margin 0 auto 0 auto*/
+				width 95%
+				margin 0 auto 0 auto
 				.contenedor
 					.contenedor_video
 						display block
@@ -245,6 +272,10 @@ html
 		body
 			.delimitador
 				.contenedor
+					.area_noticias
+						.noticia
+							width 30%
+							vertical-align top
 					.contenedor_video
 						.texto_video
 							width 30%
